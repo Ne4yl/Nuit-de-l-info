@@ -9,7 +9,7 @@ body, html
   font-family: "Droid Sans", arial, verdana, sans-serif;
 	font-weight: 700;
 	color: #c05734;
-    background-image: url();
+    background-image: url(./photo/ciel-etoile.jpg);
 	overflow: auto;
 }
 
