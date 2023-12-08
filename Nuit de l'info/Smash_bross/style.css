@@ -25,7 +25,7 @@ body{
     border: 1px solid black;
 }
 
-.bullet {
+.projectile{
     width : 150px;
     height : 146px;
     transform: translateY(-50%);
@@ -34,7 +34,7 @@ body{
 
 @keyframes slideAnimation {
     0% {
-      transform: translateX(0%); /* Démarre complètement à gauche de l'écran */
+      transform: translateX(var(--x)); /* Démarre complètement à gauche de l'écran */
     }
     100% {
       transform: translateX(calc(100vw + 200px)); /* Se déplace complètement à droite de l'écran */
