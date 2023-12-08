@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.FishGame{
+    background-image: url(./images/fond-ocean.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FishGame>p{
+    margin-top: 10vh;
+    font-size: 3rem;
+}
+
+.boat{
+    display: flex;
+    justify-content: center;
+}
+
+.boat>img{
+    margin-top: 45vh;
+    width: 50%;
+}
+
+.buttonGame{
+    margin-bottom: 10vh;
+}
+
+.buttonGame>button{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(82, 120, 189);
+    cursor: pointer;
+    margin: 0 3rem;
+}
