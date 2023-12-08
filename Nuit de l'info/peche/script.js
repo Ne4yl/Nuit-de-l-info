@@ -2,8 +2,6 @@ function sleep(s) {
     return new Promise(resolve => setTimeout(resolve, s * 1000));
 }
 
-forgetFish = 0;
-
 function fish(){ // Fonction qui fait apparaitre le poisson
 
     var fishes = document.getElementById("fishes"); // Element HTML du poisson
@@ -11,7 +9,8 @@ function fish(){ // Fonction qui fait apparaitre le poisson
 
     // Nombre aléatoire entre 1 et 5 pour le nombre de secondes a attendre avant que le poisson vienne
     var random = Math.floor(Math.random() * 5) + 1;
-        
+    
+    // Design : le poisson apparait et donc le joueur peut pécher ! 
     sleep(random).then(() => {  fishes.style.color = "red"; console.log("Enable"); miss(0);}); // Etat lorsque le poisson peut etre péché
     sleep(random +0.7).then(() => {  fishes.style.color = "black"; console.log("Disable");}); // Etat de base (pas de poisson)
     console.log("Wait " + random + " seconds");
