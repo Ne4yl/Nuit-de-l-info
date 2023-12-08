@@ -10,6 +10,7 @@ body, html
 	font-weight: 700;
 	color: #c05734;
     background-image: url(./photo/ciel-etoile.jpg);
+	background-size: cover;
 	overflow: auto;
 }
 
