@@ -22,6 +22,14 @@ function fish() {
 
   fishes.appendChild(bubbleimg);
 
+  animateTranslation(bubbleimg);
+
+  function animateTranslation(element) {
+    var animation = element.animate(
+      
+    )
+  }
+
   // Design : le poisson apparait et donc le joueur peut pécher !
   sleep(random).then(() => {
     fishes.style.color = "red";
