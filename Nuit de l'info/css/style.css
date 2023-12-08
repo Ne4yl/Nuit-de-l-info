@@ -8,7 +8,7 @@ body, html
   height: 100%;
   font-family: "Droid Sans", arial, verdana, sans-serif;
 	font-weight: 700;
-	color: #ff6;
+	color: #c05734;
 	background-color: #000;
 	overflow: hidden;
 }
@@ -72,7 +72,7 @@ h1
 	line-height: 0.8em;
 	letter-spacing: -0.05em;
 	color: #000;
-	text-shadow: -2px -2px 0 #ff6, 2px -2px 0 #ff6, -2px 2px 0 #ff6, 2px 2px 0 #ff6;
+	text-shadow: -2px -2px 0 #c05734, 2px -2px 0 #c05734, -2px 2px 0 #c05734, 2px 2px 0 #c05734;
 	opacity: 0;
 	z-index: 1;
 	-webkit-animation: logo 5s ease-out 2.5s;
@@ -173,7 +173,7 @@ h1 sub
 
 #titles a
 {
-	color: #ff6;
+	color: #c05734;
 	text-decoration: underline;
 }
 
@@ -225,11 +225,12 @@ h1 sub
 	margin-top: 10% ;
 }
 .bout-haut a {
+	z-index: 3;
 	margin: 1rem;
 	text-decoration: none;
 	font-size: 2vw;
 
-	color: #ff6;
+	color: rgb(41, 188, 12);
 	border: 50px;
 }
 
@@ -238,3 +239,20 @@ img{
     height: 150px;
     left: 40%;
 }
+
+#cloud1{
+	top:  30%; 
+	left: 30%;
+  }
+  #cloud2{
+	top:  70%; 
+	left: 80%;
+  }
+  #cloud3{
+	top:  10%; 
+	left: 70%;
+  }
+  #cloud4{
+	top:  50%; 
+	left: 20%;
+  }
