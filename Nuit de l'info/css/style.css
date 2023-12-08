@@ -8,7 +8,7 @@ p{
 }
 
 .FishGame{
-    background-image: url();
+    background-image: url(../images/fond-ocean.jpg);
     background-size: cover;
     height: 100vh;
     width: 100%;
@@ -47,3 +47,28 @@ p{
     cursor: pointer;
     margin: 0 3rem;
 }
+
+.buttonAnimation {
+    animation: bouttonAnim 0.5s ease-in-out;
+}
+
+@keyframes bouttonAnim {
+    0%{
+        transform: translateX(10px);
+    }
+    20%{
+        transform: translateX(0px);    
+    }
+    40%{
+        transform: translateX(-10px);
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}  
