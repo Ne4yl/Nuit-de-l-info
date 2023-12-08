@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
+
+.FishGame{
+    background-image: url(../images/fond-ocean.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FishGame>p{
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.boat{
+    display: flex;
+    justify-content: center;
+}
+
+.boat>img{
+    margin-top: 45vh;
+    width: 50%;
+}
+
+.buttonGame{
+    margin-bottom: 10vh;
+}
+
+.buttonGame>button{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(82, 120, 189);
+    cursor: pointer;
+    margin: 0 3rem;
+}
+
+.buttonAnimation {
+    animation: bouttonAnim 0.5s ease-in-out;
+}
+
+@keyframes bouttonAnim {
+    0%{
+        transform: translateX(10px);
+    }
+    20%{
+        transform: translateX(0px);    
+    }
+    40%{
+        transform: translateX(-10px);
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}  
+
+.retour{
+    padding-top: 1rem;
+}
+
+.retour a{
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    background-color: gainsboro;
+    border-radius: 10px;
+}

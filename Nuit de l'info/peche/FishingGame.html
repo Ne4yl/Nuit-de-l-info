@@ -1,15 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Pour dire c est du htlm au navigateur -->
+<!doctype html>
+<!-- Langue par defauts du site -->
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <meta charset="utf-8">
+    <meta name="technology" content="HTML5">
+    <meta name="google-site-verification" content="###########">
+    <!-- Pour l adaptativité du site sur mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Compatibilite avec edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Balises pour les robots des moteurs de recherche  -->
+    <meta name="robots" content="###########">
+    <!-- Meta pour Open Graph -->
+    <meta name="social:linkedin:site" content="Keria Burah">
+    <meta name="linkedin:card" content="summary_large_image">
+    <meta property="og:title" content="Nuit de l'info MNNPY">
+    <meta property="og:description" content="Page dacceuil Nuit de l'info MNNPY">
+    <meta property="og:image" content="###########">
+    <meta property="og:url" content="https://ne4yl.github.io/Nuit-de-l-info/">
+    <meta property="og:type" content="website">
+    <!-- Meta pour Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nuit de l'info MNNPY">
+    <meta name="twitter:description" content="Page dacceuil Nuit de l'info MNNPY">
+    <meta name="twitter:image" content="###########">
+    <meta name="twitter:url" content="https://ne4yl.github.io/Nuit-de-l-info/">
+    <!--Meta personnel-->
+    <meta name="author" content="Kerian Burah-Montreer">
+    <meta name="creator" content="Kerian Burah-Montreer">
+    <meta name="copyright" content="Copyright © 2023 Kerian Burah--Montreer">
+    <meta name="last-modified" content="08/12/2023">
+    <!-- Autres Meta -->
+    <meta name="description" content="Voici la page d'acceuil de la nuit de l'info 2023">
+    <meta name="keywords" content="###########">
+
+    <title>MNNPY</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <button id="fish" onclick="fish()">Retry</button>
-    <p id="fishes" style="color: black;">Plein de poissons</p>
-    <button id="catch" onclick="catchFish()">Hook</button>
-    
+
+    <section class="FishGame">
+        <div class="retour">
+            <a href="#">Retour</a>
+        </div>
+        <p id="fishes" class="textFish" style="color: black;">Plein de poissons</p>
+        <div id="poissonSaut"></div>
+        <div class="boat">
+            <img src="../images/barque.png" alt="barque">
+        </div>
+        <div class="buttonGame">
+            <button id="catch" class="buttonCatch" onclick="catchFish()">Hook</button>
+            <button id="fish" class="buttonRetry" onclick="fish()">Retry</button>
+        </div>
+    </section>
 </body>
+
 </html>
