@@ -20,7 +20,7 @@ p{
 }
 
 .FishGame>p{
-    margin-top: 10vh;
+    margin-top: 2rem;
     font-size: 3rem;
 }
 
@@ -72,3 +72,15 @@ p{
         transform: translateX(0px);
     }
 }  
+
+.retour{
+    padding-top: 1rem;
+}
+
+.retour a{
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
