@@ -9,7 +9,7 @@ body, html
   font-family: "Droid Sans", arial, verdana, sans-serif;
 	font-weight: 700;
 	color: #c05734;
-	background-color: #000;
+    background-image: url();
 	overflow: auto;
 }
 
@@ -259,24 +259,3 @@ img{
     height: 150px;
     left: 40%;
 }
-
-#cloud1{
-	top:  30%; 
-	left: 30%;
-    z-index: 10000;
-  }
-  #cloud2{
-	top:  70%; 
-	left: 80%;
-    z-index: 10000;
-  }
-  #cloud3{
-	top:  10%; 
-	left: 70%;
-    z-index: 10000;
-  }
-  #cloud4{
-	top:  50%; 
-	left: 20%;
-    z-index: 10000;
-  }
