@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+
+.maps{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgMaps{
+    display: flex;
+}
+
+.imgMaps img{
+    height: 40vh;
+}
