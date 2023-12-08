@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+
+.mario{
+    background-color: rgb(68, 211, 222);
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.bonhomme>img{
+    position: absolute;
+    bottom: 25vh;
+    left: 20%;
+}
+
+.sol{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(31, 108, 31);
+}
