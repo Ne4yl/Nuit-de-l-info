@@ -67,14 +67,12 @@ p#start
 h1
 {
 	position: absolute;
-	width: 2.6em;
-	left: 50%;
+	width: 3em;
+	left: calc(50% - 10rem);
 	top: 25%;
-	font-size: 10em;
+	font-size: 6rem;
 	text-align: center;
-	margin-left: -1.3em;
 	line-height: 0.8em;
-	letter-spacing: -0.05em;
 	color: #000;
 	text-shadow: -2px -2px 0 #c05734, 2px -2px 0 #c05734, -2px 2px 0 #c05734, 2px 2px 0 #c05734;
 	opacity: 0;
@@ -84,14 +82,6 @@ h1
 	-ms-animation: logo 5s ease-out 2.5s;
 	-o-animation: logo 5s ease-out 2.5s;
 	animation: logo 5s ease-out 2.5s;
-}
-
-h1 sub
-{
-	display: block;
-	font-size: 0.3em;
-	letter-spacing: 0;
-	line-height: 0.8em;
 }
 
 @-webkit-keyframes logo {
@@ -197,12 +187,30 @@ h1:not(:first-child), h2, p{
 	color: brown;
 }
 
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-top: 50px;
+    font-size: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #c05734;
+    margin: 0 2rem;
+}
+.star{
+    position: relative;
+    height: 65vh;
+}
 
 .arrow{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
 }
 
 .arrow svg{
@@ -246,26 +254,6 @@ h1:not(:first-child), h2, p{
 	100% { top: -170%; }
 }
 
-.bout-haut{
-    display: flex;
-    width: 100%;
-    height: 10%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    justify-content: center;
-	margin-top: 10% ;
-}
-.bout-haut a {
-	z-index: 3;
-	margin: 1rem;
-	text-decoration: none;
-	font-size: 2vw;
-
-	color: rgb(41, 188, 12);
-	border: 50px;
-}
-
 img{
     position: absolute;
     height: 150px;
@@ -275,16 +263,20 @@ img{
 #cloud1{
 	top:  30%; 
 	left: 30%;
+    z-index: 10000;
   }
   #cloud2{
 	top:  70%; 
 	left: 80%;
+    z-index: 10000;
   }
   #cloud3{
 	top:  10%; 
 	left: 70%;
+    z-index: 10000;
   }
   #cloud4{
 	top:  50%; 
 	left: 20%;
+    z-index: 10000;
   }
