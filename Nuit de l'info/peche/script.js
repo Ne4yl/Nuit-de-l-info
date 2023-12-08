@@ -9,7 +9,7 @@ function fish() {
   fishes.innerHTML = "Plein de poissons"; // Texte du poisson
 
   // Nombre aléatoire entre 1 et 5 pour le nombre de secondes a attendre avant que le poisson vienne
-  var random = Math.floor(Math.random() * 5) + 1;
+  var random = Math.floor(Math.random() * 5) + 2;
 
   // ajoute l'image bulle lorsque le texte devient rouge
   var bubbleimg = document.createElement("img");
@@ -26,8 +26,20 @@ function fish() {
 
   function animateTranslation(element) {
     var animation = element.animate(
-      
-    )
+      [
+        {transform: 'translateY(300px) translatex(20px)'},
+        {transform: 'translateY(250px) translatex(-20px)'},
+        {transform: 'translateY(200px) translatex(20px)'},
+        {transform: 'translateY(150px) translatex(-20px)'},
+        {transform: 'translateY(100px) translatex(20px)'},
+        {transform: 'translateY(50px) translatex(-20px)'},
+        {transform: 'translateY(0) translatex(0px)'}
+      ],
+      {
+        duration: 2000,
+        easing: 'ease-in-out',
+      }
+    );
   }
 
   // Design : le poisson apparait et donc le joueur peut pécher !
@@ -47,13 +59,26 @@ function fish() {
 
     fishes.appendChild(fishImage);
 
-    
+    animateTranslation(fishImage);
+
+  function animateTranslation(element) {
+    var animation = element.animate(
+      [
+        {transform: 'translateY(300px)'},
+        {transform: 'translateY(0)'}
+      ],
+      {
+        duration: 500,
+        easing: 'ease-in-out',
+      }
+    );
+  }
 
     miss(0);
   });
   
   // Etat lorsque le poisson peut etre péché
-  sleep(random + 0.7).then(() => {
+  sleep(random + 0.9).then(() => {
     fishes.style.color = "black";
     console.log("Disable");
   }); 
